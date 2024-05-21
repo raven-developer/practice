@@ -1,47 +1,86 @@
 /*imports*/
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body{
-    background-color: #fafaf8;
+/*roots*/
+:root{
+    --highlight: #DF8400;
+    --white: #fafafa;
+    --black: #070707;
+    --fade-white: #D9D9D9;
 }
 
+/*Main CSS*/
+body {
+    background-color: var(--black);
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+h1, p{
+    margin: 0;
+}
 h1{
-    font-size: 90px;
-    font-family: Albert Sans;
+    font-size: 110px;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: -2.2px;
+    text-align: center;
+}
+
+.heading-regular{
+    color: var(--white);
+    font-weight: 200;
+}
+.headings-bold{
+    color: var(--highlight);
     font-weight: 800;
-    letter-spacing: -3px;
-    line-height: 100%;
-    color: #be0b0e;
-    padding: 60px 0px 0px 0px;
-    margin: 0;
 }
-h2{
-    font-size: 60px;
-    font-family: Albert Sans;
-    font-weight: 600;
-    letter-spacing: -3px;
-    line-height: 100%;
-    color: #0e0e0e;
-    padding: 60px 0px 0px 0px;
-    margin: 0;
-}
-
-.large{
-   font-size: 120px; 
-   font-weight: 900;
-}
-
-.upper{
-    text-transform: uppercase;
-    font-size: 16px;
+.large-p{
+    font-size: 24px;
+    font-style: normal;
+    line-height: 150%;
     letter-spacing: 0px;
+    text-align: center;
+
+    color: var(--fade-white);
+    font-weight: 200;
 }
 
-.large.upper{
-    color: aqua;
+.div-body{
+    margin-top: 32px;
+    margin-bottom: 64px;
 }
 
-span{
-    color: #0e0e0e;
+.button{
+    padding: 17px 64px 16px 64px;
+    border-radius: 53px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.primary{
+    background-color: var(--highlight);
+    border: 1px solid;
+    border-color: var(--highlight);
+}
+
+.primary:hover{
+    background-color: var(--black);
+    border: 1px solid;
+    border-color: var(--highlight);
+    color: var(--white);
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 226px 0 234px 0;
 }
