@@ -1,7 +1,10 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     background-color: #fafaf8;
 }
-
 
 h1{
     font-size: 90px;
