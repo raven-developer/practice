@@ -60,6 +60,7 @@ h1{
     letter-spacing: 0px;
     text-decoration: none;
     font-weight: 600;
+    color: var(--white);
     
     transition: ease-in-out;
     transition-duration: 0.2s;
@@ -76,7 +77,6 @@ h1{
     background-color: var(--black);
     border: 1px solid;
     border-color: var(--highlight);
-    color: var(--white);
 }
 
 .section-1{
