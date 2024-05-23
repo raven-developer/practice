@@ -176,7 +176,12 @@ footer{
 }
 
 .div-image{
-    background-color: var(--fade-white);
+    background-image: url('../img/programming-background-with-person-working-with-codes-computer.jpg');
+    background-size: 153%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: var(--low-white);
     width: 527px;
     aspect-ratio: 0.98;
     max-width: 100%;
@@ -184,7 +189,13 @@ footer{
     padding: 0px;
 }
 
+
 .div-image-1{
+    background-image: url('../img/empty-helpdesk-office-with-telephony-equipment-reception-give-assistance-no-people-telemarketing-space-customer-service-client-support-remote-helpline-headphones.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
     background-color: var(--fade-white);
     width: 861px;
     aspect-ratio: 0.95;
