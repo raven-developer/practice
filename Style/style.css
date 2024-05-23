@@ -7,6 +7,7 @@
     --white: #fafafa;
     --black: #070707;
     --fade-white: #D9D9D9;
+    --off-black: #0D0D0D;
 }
 
 /*Main CSS*/
@@ -16,7 +17,7 @@ body {
     margin: 0;
 }
 
-h1, p{
+h1, h2, p{
     margin: 0;
 }
 h1{
@@ -25,6 +26,27 @@ h1{
     line-height: 110%;
     letter-spacing: -2.2px;
     text-align: center;
+}
+h2{
+    font-size: 50px;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: -2.2px;
+    text-align: left;
+}
+
+.section{
+    padding: 140px 370px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 64px;
+    position: absolute;
+}
+
+.offbackground{
+    background-color: var(--off-black);
 }
 
 .heading-regular{
@@ -46,13 +68,23 @@ h1{
     font-weight: 200;
 }
 
+.regular-p{
+    font-size: 18px;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: var(--fade-white);
+    font-weight: 200;
+}
+
 .div-body{
-    margin-top: 32px;
-    margin-bottom: 64px;
+    padding: 0px 64px;
 }
 
 .button{
-    padding: 17px 64px 16px 64px;
+    padding: 17px 32px 16px 32px;
     border-radius: 53px;
 
     font-family: "Montserrat", sans-serif;
@@ -61,6 +93,10 @@ h1{
     text-decoration: none;
     font-weight: 600;
     color: var(--white);
+
+    background-color: var(--highlight);
+    border: 1px solid;
+    border-color: var(--highlight);
     
     transition: ease-in-out;
     transition-duration: 0.2s;
@@ -68,21 +104,37 @@ h1{
 }
 
 .primary{
-    background-color: var(--highlight);
+    padding: 17px 64px 16px 64px;
+}
+
+.button:hover{
+    background-color: transparent;
     border: 1px solid;
     border-color: var(--highlight);
 }
 
-.primary:hover{
-    background-color: var(--black);
-    border: 1px solid;
-    border-color: var(--highlight);
-}
-
-.section-1{
+.hero{
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    margin: 226px 0 234px 0;
+    margin: 226px 471px 234px 471px;
+}
+
+.body-padding{
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.div-image{
+    background-color: var(--fade-white);
+    height: 464px;
+    width: 527px;
+    /*max-width: 100%;*/
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.section1-content{
+    flex: 50%;
 }
