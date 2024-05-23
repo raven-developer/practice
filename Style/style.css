@@ -8,9 +8,20 @@
     --black: #070707;
     --fade-white: #D9D9D9;
     --off-black: #0D0D0D;
+    --low-white: #A0A0A0;
 }
 
 /*Main CSS*/
+body{ 
+    height:100%;
+    background:
+    linear-gradient(#0D0D0D 0 0) calc(1*100%/2),
+    linear-gradient(#0D0D0D 0 0) calc(2*100%/10.3),
+    linear-gradient(#0D0D0D 0 0) calc(3*100%/3.72);
+    background-size:2px 100%;
+    background-repeat:no-repeat;
+    
+}
 body {
     background-color: var(--black);
     font-family: "Montserrat", sans-serif;
@@ -20,6 +31,7 @@ body {
 h1, h2, p{
     margin: 0;
 }
+
 h1{
     font-size: 110px;
     font-style: normal;
@@ -33,20 +45,6 @@ h2{
     line-height: 110%;
     letter-spacing: -2.2px;
     text-align: left;
-}
-
-.section{
-    padding: 140px 370px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 64px;
-    position: absolute;
-}
-
-.offbackground{
-    background-color: var(--off-black);
 }
 
 .heading-regular{
@@ -79,10 +77,6 @@ h2{
     font-weight: 200;
 }
 
-.div-body{
-    padding: 0px 64px;
-}
-
 .button{
     padding: 17px 32px 16px 32px;
     border-radius: 53px;
@@ -113,6 +107,56 @@ h2{
     border-color: var(--highlight);
 }
 
+.max-wid{
+    width: 100%;
+}
+
+.section{
+    align-items: center;
+    justify-content: flex-start;
+    gap: 64px;
+}
+
+.section-pad-row{
+    padding: 140px 370px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-pad-fullheight{
+    padding-right:370px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    padding: 70px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-pad-col{
+    padding: 140px 370px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section1-content{
+    flex: 50%;
+}
+
+.offbackground{
+    background-color: var(--off-black);
+}
+
+.low-white-txt{
+    color: var(--low-white);
+}
+
+.div-body{
+    padding: 0px 64px;
+}
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -121,20 +165,93 @@ h2{
     margin: 226px 471px 234px 471px;
 }
 
-.body-padding{
+.body-padding-64{
     padding-top: 32px;
     padding-bottom: 64px;
 }
 
+.body-padding-40{
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
 .div-image{
     background-color: var(--fade-white);
-    height: 464px;
     width: 527px;
-    /*max-width: 100%;*/
+    aspect-ratio: 0.98;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0px;
 }
 
-.section1-content{
-    flex: 50%;
+.div-image-1{
+    background-color: var(--fade-white);
+    width: 861px;
+    aspect-ratio: 0.95;
+    object-position: center;
+    max-width: 100%;
+}
+
+.form-pad{
+    padding-bottom: 40px;
+}
+.input-field {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    line-height: 44px;
+}
+
+.label{
+    position: absolute;
+    top: -32px;
+    left: 0;
+    width: 100%;
+    transition: 300ms ease;
+    cursor: text;
+    font-size: 13px;
+    color: var(--low-white);
+}
+
+input, textarea{
+    width: 100%;
+    height: max-content;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid var(--low-white);
+    background-color: transparent;
+    box-shadow: none;
+
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--low-white);
+}
+
+input:invalid{
+    outline: 0;
+}
+
+textarea:focus,
+input:focus{
+    border-color: var(--highlight);
+    color: var(--fade-white);
+}
+
+textarea:valid,
+input:valid{
+    border-color: var(--white);
+    color: var(--white);
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    color: var(--highlight);
+}
+
+.input-margin{
+    margin-top: 20px;
+}
+textarea{
+    height: 108px
 }
