@@ -57,17 +57,19 @@ body {
     font-weight: 200;
 }
 
-.button{
+.btn-style{
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     letter-spacing: 0px;
     text-decoration: none;
     font-weight: 600;
+}
+
+.prim{
     color: var(--white);
 
     background-color: var(--highlight);
-    border: 1px solid;
-    border-color: var(--highlight);
+    border: 1px solid var(--highlight);
     border-radius: 53px;
     
     transition: ease-in-out;
@@ -75,10 +77,28 @@ body {
     cursor: pointer;
 }
 
-.button:hover{
+.prim:hover{
     background-color: transparent;
-    border: 1px solid;
-    border-color: var(--highlight);
+    border: 1px solid var(--highlight);
+}
+
+.secnd{
+    color: var(--white);
+
+    background-color: transparent;
+    border: 1px solid var(--low-white);
+    border-radius: 53px;
+    
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.secnd:hover{
+    color: var(--white);
+
+    background-color: var(--highlight);
+    border: 1px solid var(--highlight);
 }
 
 .section-pad-fullheight{
