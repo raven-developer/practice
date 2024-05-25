@@ -2,99 +2,124 @@
 <html>
 
 <head>
-    <title>Style Test Page</title>
-    <link rel="stylesheet" type="text/css" href="Style/style.css">
-</head>
+    <title>Company Name</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-01.png">
 
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <link rel="stylesheet" type="text/css" href="Style/staticStyle.css">
+</head>
+ 
 <body>
+    <!--Navigation-->
+    <div class="nav-bar">
+        <div class="f-flex max-wid ai-center jc-spcbtwn">
+            <div class="nav-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="40" viewBox="0 0 176 40">
+                    <path fill-rule="evenodd" d="M15 28a5 5 0 0 1-5-5V0H0v23c0 8.284 6.716 15 15 15h11V28H15ZM45 10a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-19 9C26 8.507 34.507 0 45 0s19 8.507 19 19-8.507 19-19 19-19-8.507-19-19ZM153 10a9 9 0 0 0-9 9 9 9 0 0 0 9 9 9 9 0 0 0 9-9 9 9 0 0 0-9-9Zm-19 9c0-10.493 8.507-19 19-19s19 8.507 19 19-8.507 19-19 19-19-8.507-19-19ZM85 0C74.507 0 66 8.507 66 19s8.507 19 19 19h28c1.969 0 3.868-.3 5.654-.856L124 40l5.768-10.804A19.007 19.007 0 0 0 132 20.261V19c0-10.493-8.507-19-19-19H85Zm37 19a9 9 0 0 0-9-9H85a9 9 0 1 0 0 18h28a9 9 0 0 0 9-8.93V19Z" clip-rule="evenodd"></path>
+                    <path d="M176 2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"></path>
+                </svg>
+            </div>
+
+            <div class="nav-links f-flex fd-row ai-center jc-cntr">
+                <div class="links">Services</div>
+                <div class="links">About Us</div>
+                <div class="links">Download</div>
+                <div class="links">Blog</div>
+                <div class="links">Support</div>
+            </div>
+
+            <div class="cta-button">
+                <button class="button regular-btn" type="button" onclick="alert('Hello world!')">
+                <span>Talk With Us</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!--Hero-->
-    <section class="hero">
+    <section class="hero f-flex fd-col ai-center ac-center jc-flxstrt">
         <div class="">
             <H1 class="heading-regular">When standard IT is <span class="headings-bold">not enough</span>.</H1>
         </div>
         
-        <div class="div-body body-padding-64">
+        <div class="div-body padding-32-64">
             <p class="large-p">With our excellent IT services, we make you and your end customers even more successful and ensure your unique competitive advantage.</p>
         </div>
 
         <div class="cta-button">
-            <button class="primary button" type="button" onclick="alert('Hello world!')">
+            <button class="large-btn button" type="button" onclick="alert('Hello world!')">
                 <span>Talk With Us</span>
             </button>
         </div>
     </section>
 
     <!--Section 1-->
-    <section class="section section-pad-row offbackground">
+    <section class="section-140-370 gap-60 f-flex fd-row offbackground jc-flxstrt ai-center">
         
         <div class="column-1">
             <div class="div-heading">
                 <h2 class="heading-regular">Ready to turn your uniqueness into a <span class="headings-bold">competitive advantage and unlock growth?</span></h2>
             </div>
 
-            <div class="body-padding-64">
+            <div class="padding-32-64">
                 <p class="regular-p">With our customised strategies, you will always stay up to date. Let our inspiring IT solutions carry you into the future.</p>
             </div>
 
             <div class="cta-button">
-                <button class="button" type="button" onclick="alert('Hello world!')">
+                <button class="button regular-btn" type="button" onclick="alert('Hello world!')">
                 <span>Talk With Us</span>
                 </button>
             </div>
         </div>
 
         <div class="column-1">
-            <div class="div-image">
-                
-            </div>
+            <div class="div-image max-wid"></div>
         </div>  
     </section>
 
     <!--Section 2-->
-    <section class="section section-pad-fullheight" style="gap: 90px;">
+    <section class="section-pad-fullheight f-flex fd-row jc-flxstrt ai-center gap-90">
         <div class="column-1">
-            <div class="div-image-1">
-                
-            </div>
+            <div class="div-image-1 max-wid"></div>
         </div>
         <div class="column-1">
             <div class="div-heading">
                 <h2 class="heading-regular"><span class="headings-bold">We are here</span> for you!</h2>
             </div>
 
-            <div class="body-padding-40">
+            <div class="padding-32-40">
                 <p class="regular-p">Our support team is available 24 hours a day, seven days a week to help you with your IT questions or issues.</p>
             </div>
 
-            <form action="" class="form-pad">
-                <div class="input-field">
-                    <input type="text" id="fullname" class="textfield" placeholder="Enter your full name" required>
+            <form action="" class="padding-bot-40">
+                <div class="input-field max-wid">
+                    <input type="text" id="fullname" class="textfield wid-100" placeholder="Enter your full name" required>
                 </div>
 
-                <div class="input-field input-margin">
-                    <input type="text" id="email" class="textfield" placeholder="Enter your email address" required>
+                <div class="input-field max-wid margin-top-20">
+                    <input type="text" id="email" class="textfield wid-100" placeholder="Enter your email address" required>
                 </div>
 
-                <div class="input-field input-margin">
-                    <input type="text" id="company" class="textfield" placeholder="Enter your company name" required>
+                <div class="input-field max-wid margin-top-20">
+                    <input type="text" id="company" class="textfield wid-100" placeholder="Enter your company name" required>
                 </div>
 
-                <div class="input-field input-margin">
-                    <textarea class="textfield" placeholder="How can we help you"></textarea>
+                <div class="input-field max-wid margin-top-20">
+                    <textarea class="textfield wid-100" placeholder="How can we help you"></textarea>
                 </div>
             </form>
 
             <div class="cta-button">
-                <button class="max-wid button" type="button" onclick="alert('Send Message Button Worked')">
-                <span>Send Message</span>
+                <button class="wid-100 button regular-btn" type="button" onclick="alert('Send Message Button Worked')">
+                    <span>Send Message</span>
                 </button>
             </div>
     </section>
 </body>
 
 <!--footer-->
-<footer class="footer-pad-row offbackground">
-    <p class="regular-p">Copyright 2023. <span class="headings-bold">Company Name.</span> All Right Reserved.</p>
+<footer class="footer-pad-fd-row offbackground jc-cntr f-flex">
+    <p class="regular-p">Copyright 2023. <a href="#"><span class="headings-bold">Company Name</span></a>. All Right Reserved.</p>
 </footer>
 
 </html>

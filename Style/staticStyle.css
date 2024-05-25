@@ -1,0 +1,104 @@
+:root{
+    --highlight: #DF8400;
+    --white: #fafafa;
+    --black: #070707;
+    --fade-white: #D9D9D9;
+    --off-black: #0D0D0D;
+    --low-white: #A0A0A0;
+}
+
+/*Fonts*/
+h1, h2, h3, h4, h5, h6, p, body{
+    margin: 0;
+}
+h1{
+    font-size: 110px;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: -2px;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: -1.5px;
+    text-align: left;
+}
+
+/*flex*/
+.f-flex{
+    display: flex;
+}
+
+/*flex-direction*/
+.fd-row{
+    flex-direction: row;
+}
+.fd-col{
+    flex-direction: column;
+}
+.fd-wrap{
+    flex-wrap: wrap;
+}
+
+/*align-items*/
+.ai-center{
+    align-items: center;
+}
+
+/*align-content*/
+.ac-center{
+    align-content: center;
+}
+
+/*justify-content*/
+.jc-spcbtwn{
+    justify-content: space-between;
+}
+.jc-flxstrt{
+    justify-content: flex-start;
+}
+.jc-cntr{
+    justify-content: center;
+}
+
+/*padding margin gap*/
+.large-btn{
+    padding: 17px 64px 16px 64px;
+}
+.regular-btn{
+    padding: 17px 32px 16px 32px;
+}
+.section-140-370{
+    padding: 140px 370px;
+}
+.max-wid{
+    max-width: 100%;
+}
+.wid-100{
+    width: 100%;
+}
+.gap-60{
+    gap: 59px;
+}
+.gap-64{
+    gap: 64px;
+}
+.gap-90{
+    gap: 90px;
+}
+.padding-32-64{
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+.padding-32-40{
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.padding-bot-40{
+    padding-bottom: 40px;
+}

@@ -25,26 +25,6 @@ body{
 body {
     background-color: var(--black);
     font-family: "Montserrat", sans-serif;
-    margin: 0;
-}
-
-h1, h2, p{
-    margin: 0;
-}
-
-h1{
-    font-size: 110px;
-    font-style: normal;
-    line-height: 110%;
-    letter-spacing: -2.2px;
-    text-align: center;
-}
-h2{
-    font-size: 50px;
-    font-style: normal;
-    line-height: 110%;
-    letter-spacing: -2.2px;
-    text-align: left;
 }
 
 .heading-regular{
@@ -78,9 +58,6 @@ h2{
 }
 
 .button{
-    padding: 17px 32px 16px 32px;
-    border-radius: 53px;
-
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     letter-spacing: 0px;
@@ -91,14 +68,11 @@ h2{
     background-color: var(--highlight);
     border: 1px solid;
     border-color: var(--highlight);
+    border-radius: 53px;
     
     transition: ease-in-out;
     transition-duration: 0.2s;
     cursor: pointer;
-}
-
-.primary{
-    padding: 17px 64px 16px 64px;
 }
 
 .button:hover{
@@ -107,42 +81,29 @@ h2{
     border-color: var(--highlight);
 }
 
-.max-wid{
-    width: 100%;
-}
-
-.section{
-    align-items: center;
-    justify-content: flex-start;
-    gap: 64px;
-}
-
-.section-pad-row{
-    padding: 140px 370px;
-    display: flex;
-    flex-direction: row;
-}
-
 .section-pad-fullheight{
     padding-right:370px;
-    display: flex;
-    flex-direction: row;
+}
+
+.nav-bar{
+    padding: 32px 70px;
+}
+
+.nav-logo{
+    fill: var(--white);
+    width: 182.91;
+}
+
+.nav-links{
+    color: var(--low-white);
+}
+
+.nav-links .links{
+    padding: 12px 24px;
 }
 
 footer{
     padding: 70px 0px;
-    display: flex;
-    justify-content: center;
-}
-
-.section-pad-col{
-    padding: 140px 370px;
-    display: flex;
-    flex-direction: row;
-}
-
-.section1-content{
-    flex: 50%;
 }
 
 .offbackground{
@@ -158,33 +119,18 @@ footer{
 }
 
 .hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin: 226px 471px 234px 471px;
-}
-
-.body-padding-64{
-    padding-top: 32px;
-    padding-bottom: 64px;
-}
-
-.body-padding-40{
-    padding-top: 32px;
-    padding-bottom: 40px;
+    margin: 131px 471px 208px 471px;
 }
 
 .div-image{
     background-image: url('../img/programming-background-with-person-working-with-codes-computer.jpg');
-    background-size: 153%;
+    background-size: 167%;
     background-repeat: no-repeat;
     background-position: center;
 
     background-color: var(--low-white);
-    width: 527px;
-    aspect-ratio: 0.98;
-    max-width: 100%;
+    width: 516px;
+    aspect-ratio: 0.9;
     margin: 0 auto;
     padding: 0px;
 }
@@ -200,32 +146,15 @@ footer{
     width: 861px;
     aspect-ratio: 0.95;
     object-position: center;
-    max-width: 100%;
 }
 
-.form-pad{
-    padding-bottom: 40px;
-}
 .input-field {
     position: relative;
-    width: 100%;
     height: max-content;
     line-height: 44px;
 }
 
-.label{
-    position: absolute;
-    top: -32px;
-    left: 0;
-    width: 100%;
-    transition: 300ms ease;
-    cursor: text;
-    font-size: 13px;
-    color: var(--low-white);
-}
-
 input, textarea{
-    width: 100%;
     height: max-content;
     border: 0;
     outline: 0;
@@ -260,9 +189,11 @@ input:valid ~ label{
     color: var(--highlight);
 }
 
-.input-margin{
-    margin-top: 20px;
-}
 textarea{
     height: 108px
+}
+
+a{
+    text-decoration: none;
+    color: var(--highlight)
 }
